@@ -20,23 +20,21 @@
 <body>
     <!--Шапка сайта-->
     <header class="header">
-        <div class="container">
-        <nav>
+        <div class="container header-container">
             <a class="header-logo link" href="/" target="_blank">
                 <span id="logo-blue">Web</span><span id="logo-black">Studio</span>
             </a>
-
-            <ul class="list header-list">
-                <li class="header-item"><a class="link header-link" href="/index.html">Студия</a></li>
-                <li class="header-item"><a class="link header-link" href="">Портфолио</a></li>
-                <li class="header-item"><a class="link header-link" href="">Контакты</a></li>
-            </ul>
-        </nav>
-        <ul class="list header-list">
-            <li class="contact-item"><a class="link contact-contact" href="mailto:info@example.com">info@example.com</a>
-            </li>
-            <li class="contact-item"><a class="link contact-tel" href="tel:+380991111111">+38 099 111 11 11</a></li>
-        </ul>
+            <nav class="header-nav">
+                <ul class="list header-list">
+                    <li class="header-item"><a class="link header-link current" href="">Студия</a></li>
+                    <li class="header-item"><a class="link header-link" href="/portfolio.html">Портфолио</a></li>
+                    <li class="header-item"><a class="link header-link" href="">Контакты</a></li>
+                </ul>
+            </nav>
+            <div class="header-connect">
+                <a class="link contact-contact" href="mailto:info@example.com">info@example.com</a></li>
+                <a class="link contact-tel" href="tel:+380991111111">+38 099 111 11 11</a></li>
+            </div>
         </div>
     </header>
     <main>
@@ -53,11 +51,19 @@
             </ul>
         </div>
             <!--Преимущества-->
+            
+            <div class="container">
             <ul class="about-cards">
                 <li class="list card-list">
+                    <article class="card">
+                        <div class="card-thumb">
                     <img src="./images2/img-10.jpg" alt="" width="270">
+                        </div>
+                        <div class="card-content">
                     <h2 class="cards-title">Технокряк</h2>
                     <p class="cards-after-title">Веб-сайты</p>
+                        </div>
+                    </article>
                 </li>
                 <li class="list card-list">
                     <img src="./images2/img-3-2.jpg" alt="" width="270">
@@ -99,6 +105,7 @@
                     <h2 lang="en" class="cards-title">Growing Business</h2>
                     <p class="cards-after-title">Приложение</p>
                 </li>
+            </div>
             </ul>
         </section>
     </main>

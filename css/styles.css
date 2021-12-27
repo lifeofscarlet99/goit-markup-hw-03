@@ -26,6 +26,12 @@ ol {
   margin: 0;
   padding-left: 0;
 }
+img {
+  display: block;
+  min-width: 100%;
+  height: auto;
+}
+ 
 
 .container {
   width: 1200px;
@@ -164,6 +170,7 @@ ol {
 .hero-container {
   display: flex;
   justify-content: center;
+  
 }
 
 .features {
@@ -205,7 +212,12 @@ ol {
   letter-spacing: 0.03em;
   color: #757575;
 }
-.header-button {
+.main-button {
+  padding-top: 200px;
+  padding-bottom: 200px;
+  text-align: center;
+}
+.header-button-text {
   font-weight: bold;
   font-size: 16px;
   line-height: 1.8;
@@ -214,10 +226,18 @@ ol {
   text-align: center;
   letter-spacing: 0.06em;
   color: #ffffff;
-  background-color: var(--accent-color);
+  width: 136px;
+  height: 30px;
+}
+.header-button {
+  background: #2196f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-  min-width: 160px;
-  min-height: 40px;
+  min-width: 200px;
+  min-height: 50px;
+  margin-top: 30px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .header-button:hover,
@@ -235,16 +255,25 @@ ol {
 }
 .about-list {
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
 }
+.about-item:not(:last-child) {
+  margin-right: 30px;
+}
+
 .team {
   padding-top: 94px;
   padding-bottom: 94px;
 }
 .team-list {
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
 }
+
+.about-item-team:not(:last-child) {
+  margin-right: 30px;
+}
+
 .team-pre-title {
   font-weight: bold;
   font-size: 36px;
@@ -273,6 +302,7 @@ ol {
   letter-spacing: 0.03em;
   color: #757575;
   margin-bottom: 30px;
+
 }
 
 .btn-item {
@@ -284,8 +314,16 @@ ol {
   color: #212121;
   background: #f5f4fa;
   border-radius: 4px;
+  margin-bottom: 50px;
+  margin-top: 94px;
 }
-.btn-list {
+
+.btn-item:not(:last-child) {
+  margin-right: 8px; 
+}
+
+
+  .btn-list {
   display: flex;
   justify-content: center;
 }
@@ -294,15 +332,28 @@ ol {
   color: #2196f3;
 }
 .about-cards {
+  padding: 0;
+  margin: 0;
+  list-style: 0;
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-bottom: 30px;
 }
+.card-list {
+  width: calc(100% / 3 - 30px);
+  margin-left: 30px;
+  margin-bottom: 30px;
+}
+}
+
 .cards-title {
   font-weight: bold;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
   color: #212121;
+  margin-top: 20px;
 }
 
 .cards-after-title {
@@ -311,6 +362,7 @@ ol {
   line-height: 1.8;
   letter-spacing: 0.03em;
   color: #757575;
+  margin-top: 4px;
 }
 
 /* -----FOOTER------- */
