@@ -10,6 +10,7 @@
 body {
   font-family: Roboto, sans-serif;
   color: var(--first-title-color);
+  background: #e5e5e5;
 }
 
 p,
@@ -31,14 +32,12 @@ img {
   min-width: 100%;
   height: auto;
 }
- 
 
 .container {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin: o auto;
-  outline: 2px solid violet;
 }
 
 .list {
@@ -70,6 +69,7 @@ img {
   background: var(--header-color);
   padding-top: 24px;
   margin-bottom: 25px;
+  background-color: #e5e5e5;
 }
 .header-container {
   display: flex;
@@ -80,6 +80,7 @@ img {
 }
 .header-connect {
   margin-left: auto;
+  margin-bottom: 32px;
 }
 .header-logo {
   font-family: Raleway;
@@ -90,6 +91,7 @@ img {
   letter-spacing: 0.03em;
   color: var(--first-title-color);
   margin-right: 93px;
+  margin-bottom: 32px;
 }
 #logo-black {
   color: var(--first-title-color);
@@ -116,12 +118,14 @@ img {
   font-weight: bold;
   font-size: 16px;
   line-height: 1.8;
-  display: flex;
-  align-items: center;
-  text-align: center;
   letter-spacing: 0.06em;
   color: var(--first-btn-color);
   background-color: var(--second-btn-color);
+  padding-right: 32px;
+  padding-left: 32px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 4px;
 }
 
 .header-button:hover,
@@ -141,6 +145,9 @@ img {
   text-transform: uppercase;
   color: #a32c2c;
   margin-bottom: 30px;
+  width: 686px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .header-link {
@@ -152,6 +159,7 @@ img {
 }
 .header-item:not(:last-child) {
   margin-right: 50px;
+  margin-bottom: 32px;
 }
 .contact-contact {
   margin-right: 50px;
@@ -168,9 +176,7 @@ img {
 
 /* -----HERO------- */
 .hero-container {
-  display: flex;
   justify-content: center;
-  
 }
 
 .features {
@@ -193,6 +199,11 @@ img {
   letter-spacing: 0.03em;
   color: #212121;
 }
+
+.features-item:not(:last-child) {
+  margin-right: 30px;
+}
+
 .features-list {
   display: flex;
   justify-content: center;
@@ -204,6 +215,7 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #212121;
+  text-align: left;
 }
 .features-after-title {
   font-weight: normal;
@@ -211,33 +223,14 @@ img {
   line-height: 1.7;
   letter-spacing: 0.03em;
   color: #757575;
+  display: list-item;
+  text-align: left;
 }
+
 .main-button {
   padding-top: 200px;
   padding-bottom: 200px;
   text-align: center;
-}
-.header-button-text {
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 1.8;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  letter-spacing: 0.06em;
-  color: #ffffff;
-  width: 136px;
-  height: 30px;
-}
-.header-button {
-  background: #2196f3;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-  min-width: 200px;
-  min-height: 50px;
-  margin-top: 30px;
-  margin-right: auto;
-  margin-left: auto;
 }
 
 .header-button:hover,
@@ -268,6 +261,17 @@ img {
 .team-list {
   display: flex;
   flex-wrap: wrap;
+}
+
+.our-team {
+  background: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  overflow: hidden;
+}
+.team-thumb {
+  padding-bottom: 30px;
 }
 
 .about-item-team:not(:last-child) {
@@ -302,7 +306,6 @@ img {
   letter-spacing: 0.03em;
   color: #757575;
   margin-bottom: 30px;
-
 }
 
 .btn-item {
@@ -319,11 +322,10 @@ img {
 }
 
 .btn-item:not(:last-child) {
-  margin-right: 8px; 
+  margin-right: 8px;
 }
 
-
-  .btn-list {
+.btn-list {
   display: flex;
   justify-content: center;
 }
@@ -345,6 +347,18 @@ img {
   margin-left: 30px;
   margin-bottom: 30px;
 }
+.card {
+  background: #ffffff;
+  border-radius: 1px solid #eeeeee;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.card-content {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  padding-top: 20px;
 }
 
 .cards-title {
@@ -369,6 +383,7 @@ img {
 
 .footer {
   background-color: #2f303a;
+  padding-top: 60px;
 }
 .address {
   color: var(--header-color);
@@ -398,4 +413,15 @@ img {
 }
 .footer .address {
   font-style: normal;
+}
+.address.address.tel {
+  padding-top: 9px;
+  padding-bottom: 60px;
+}
+.footer.footer-logo {
+  padding-bottom: 9px;
+  margin-top: 60px;
+}
+.address.address {
+  padding-top: 20px;
 }
