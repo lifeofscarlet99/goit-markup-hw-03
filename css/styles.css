@@ -37,7 +37,7 @@ img {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
-  margin: o auto;
+  margin: 0 auto;
 }
 
 .list {
@@ -80,7 +80,6 @@ img {
 }
 .header-connect {
   margin-left: auto;
-  margin-bottom: 32px;
 }
 .header-logo {
   font-family: Raleway;
@@ -91,7 +90,6 @@ img {
   letter-spacing: 0.03em;
   color: var(--first-title-color);
   margin-right: 93px;
-  margin-bottom: 32px;
 }
 #logo-black {
   color: var(--first-title-color);
@@ -159,7 +157,6 @@ img {
 }
 .header-item:not(:last-child) {
   margin-right: 50px;
-  margin-bottom: 32px;
 }
 .contact-contact {
   margin-right: 50px;
@@ -183,7 +180,7 @@ img {
   padding-top: 94px;
 }
 .about {
-  padding-top: 289px;
+  padding-top: 94px;
   padding-bottom: 94px;
 }
 
@@ -198,6 +195,7 @@ img {
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
+  width: 270px;
 }
 
 .features-item:not(:last-child) {
@@ -225,6 +223,7 @@ img {
   color: #757575;
   display: list-item;
   text-align: left;
+  margin-top: 10px;
 }
 
 .main-button {
@@ -295,7 +294,7 @@ img {
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
-  margin-bottom: 10px;
+  padding-bottom: 10px;
 }
 
 .team-after-title {
@@ -384,6 +383,7 @@ img {
 .footer {
   background-color: #2f303a;
   padding-top: 60px;
+  padding-bottom: 60px;
 }
 .address {
   color: var(--header-color);
@@ -416,7 +416,6 @@ img {
 }
 .address.address.tel {
   padding-top: 9px;
-  padding-bottom: 60px;
 }
 .footer.footer-logo {
   padding-bottom: 9px;
@@ -424,4 +423,7 @@ img {
 }
 .address.address {
   padding-top: 20px;
+}
+.kuku {
+  padding-bottom: 9px;
 }
