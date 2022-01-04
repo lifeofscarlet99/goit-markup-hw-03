@@ -67,7 +67,7 @@ img {
 .header {
   background: var(--header-color);
   padding-top: 24px;
-  margin-bottom: 25px;
+  padding-bottom: 25px;
 }
 .header-container {
   display: flex;
@@ -307,7 +307,8 @@ img {
   color: #757575;
 }
 .about-buttons {
-  margin-top: 94px;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 .btn-item {
   font-weight: 500;
@@ -318,7 +319,6 @@ img {
   color: #212121;
   background: #f5f4fa;
   border-radius: 4px;
-  margin-bottom: 50px;
   padding-bottom: 6px;
   padding-top: 6px;
   padding-left: 22px;
@@ -329,6 +329,7 @@ img {
 .btn-list {
   display: flex;
   justify-content: center;
+  margin-bottom: 50px;
 }
 .btn-item:hover,
 .btn-item:focus {
@@ -354,15 +355,13 @@ img {
   overflow: hidden;
   box-sizing: border-box;
 }
-.container.cards {
-  padding-bottom: 94px;
-}
 
 .card-content {
   padding-left: 20px;
   padding-right: 20px;
   padding-bottom: 20px;
   padding-top: 20px;
+  border: 1px solid #eeeeee;
 }
 
 .cards-title {
@@ -427,7 +426,27 @@ img {
 }
 .address.address {
   margin-top: 20px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
 }
 .kuku {
   margin-bottom: 9px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+}
+.link.tel {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
 }
